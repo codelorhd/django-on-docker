@@ -24,6 +24,8 @@ services:
       - .env.prod.db
 
   nginx-proxy:
+    labels:
+    - "com.github.jrcs.letsencrypt_nginx_proxy_companion.nginx_proxy"
     container_name: nginx-proxy
     build: ./nginx
     restart: always
