@@ -56,7 +56,7 @@ services:
       - html:/usr/share/nginx/html
       - vhost:/etc/nginx/vhost.d
     depends_on:
-      - nginx-proxy  
+      - nginx-proxy
 
 volumes:
   postgres_data:
